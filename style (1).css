@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.thumbnail {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 250px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.thumbnail:active {
+    transform: scale(0.95);
+}
+
+/* Discord Button */
+.discord-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.discord-button:hover {
+    background-color: #4854c3;
+}
