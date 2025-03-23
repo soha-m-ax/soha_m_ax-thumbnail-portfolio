@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>§ohaMax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>§ohaMax's Gaming Thumbnails</h1>
+    </header>
+
+    <!-- Thumbnail Display as a Button -->
+    <button id="thumbnail-btn">
+        <img id="thumbnail-img" src="images/thumb1.jpg" alt="Gaming Thumbnail">
+    </button>
+
+    <!-- Category Button -->
+    <button id="category-btn">Select Category</button>
+
+    <!-- Category Chart -->
+    <div id="category-chart" class="hidden">
+        <button class="category" onclick="showThumbnails('fps')">FPS</button>
+        <button class="category" onclick="showThumbnails('rpg')">RPG</button>
+        <button class="category" onclick="showThumbnails('horror')">Horror</button>
+        <button class="category" onclick="showThumbnails('sports')">Sports</button>
+        <button class="category" onclick="showThumbnails('adventure')">Adventure</button>
+    </div>
+
+    <footer>
+        <a href="contact.html" class="discord-button">Contact Me on Discord</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
